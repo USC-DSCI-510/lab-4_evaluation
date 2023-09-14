@@ -18,7 +18,6 @@ def generate_frequency_map(file_name: str) -> List:
 
 def palindrome_finder(file_name: str):
     filename = os.path.basename(file_name)
-    palindrome_lines = []
     output_file = open("palindrome_" + filename, "w+")
     with open(file_name, "r") as f:
         while True:
