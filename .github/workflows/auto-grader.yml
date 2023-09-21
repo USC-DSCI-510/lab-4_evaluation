@@ -41,7 +41,6 @@ jobs:
                 mkdir $SUBMISSION_DIR
                 # Copy student_roster to submission directory
                 cp $EVALUATION_REPO/.github/workflows/student_roster.txt  $SUBMISSION_DIR/student_roster.txt
-                cat $SUBMISSION_DIR/student_roster.txt
 
             - name: Clone Student Repositories
               run: |
@@ -80,6 +79,11 @@ jobs:
                     cp ../../$EVALUATION_REPO/requirements.txt .
                     cp ../../$EVALUATION_REPO/.github/workflows/classroom.yml ./.github/workflows/classroom.yml
                     cp -r ../../$EVALUATION_REPO/tests .
+
+                    # Copy input files
+                    cp -r ../../$EVALUATION_REPO/extensions_*.txt .
+                    cp -r ../../$EVALUATION_REPO/numbers_*.txt .
+                    cp -r ../../$EVALUATION_REPO/sentences_*.txt .
 
                     # Check if test.py exists before removing it
                     if [ -e test.py ]; then
