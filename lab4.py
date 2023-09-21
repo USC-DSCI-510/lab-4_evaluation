@@ -17,7 +17,8 @@ def generate_frequency_map(file_name: str) -> List:
     freq_map = [0 for i in range(10)]
 
     for num in lines_s:
-        freq_map[num] = freq_map[num] + 1
+        if num < 10:
+            freq_map[num] = freq_map[num] + 1
     return freq_map
 
 
@@ -59,7 +60,7 @@ def file_extension(file_name: str):
         line = input_file.readline()
         if not line:
             break
-        ext_line = line.strip().split(".")[-1]
+        ext_line = line.strip().split(".")[-1].lower()
         if ext_line in file_extensions:
             files_map[ext_line].append(line.strip())
 
