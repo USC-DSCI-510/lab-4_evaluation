@@ -1,0 +1,10 @@
+.config.txt
+.vscode.JSON
+.hidden_config.Pdf
+polish-the-time.Doc
+
+file1.ext1.ext2
+file2.ext2.ext3
+file3.ext3.ext4
+
+very_long_file_name_is_very_long.txt
