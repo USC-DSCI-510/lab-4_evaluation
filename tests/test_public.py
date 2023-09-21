@@ -15,7 +15,7 @@ from lab4 import file_extension, generate_frequency_map, palindrome_finder
         ("numbers_4.txt", [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
     ],
 )
-@pytest.mark.timeout(0.3)
+@pytest.mark.timeout(0.05)
 def test_generate_frequency_map(base_filename, freq_map):
     assert generate_frequency_map(base_filename) == freq_map
 
@@ -50,7 +50,7 @@ def test_generate_frequency_map(base_filename, freq_map):
         ("sentences_4.txt", []),
     ],
 )
-@pytest.mark.timeout(0.3)
+@pytest.mark.timeout(0.05)
 def test_palindrome_finder(base_filename, result):
     palindrome_finder(base_filename)
     with open("palindrome_" + base_filename, "r") as f:
@@ -61,7 +61,7 @@ def test_palindrome_finder(base_filename, result):
     assert lines_s == result
 
 
-@pytest.mark.timeout(0.3)
+@pytest.mark.timeout(0.05)
 def test_palindrome_finder_exception():
     with pytest.raises(Exception):
         palindrome_finder("sentences_5.txt")
@@ -97,7 +97,7 @@ def test_palindrome_finder_exception():
         ("extensions_4.txt", {"pdf": [], "doc": [], "txt": []}),
     ],
 )
-@pytest.mark.timeout(0.3)
+@pytest.mark.timeout(0.05)
 def test_file_extension(base_filename, result):
     file_extension(base_filename)
     extensions = ["txt", "doc", "pdf"]
@@ -113,7 +113,7 @@ def test_file_extension(base_filename, result):
     assert resDir == result
 
 
-@pytest.mark.timeout(0.3)
+@pytest.mark.timeout(0.05)
 def test_file_extension_exception():
     with pytest.raises(Exception):
         file_extension("extensions_5.txt")
