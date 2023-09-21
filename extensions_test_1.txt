@@ -1,0 +1,9 @@
+Report_Summary.pdf
+Vacation_Plan.pdf
+Budget_Spreadsheet.pdf
+Project_Proposal.doc
+Resume_Template.doc
+Meeting_Minutes.doc
+Shopping_List.txt
+Poetry_Collection.txt
+Recipe_Book.txt
