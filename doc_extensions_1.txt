@@ -1,3 +1,0 @@
-first.doc
-second.doc
-third.doc
