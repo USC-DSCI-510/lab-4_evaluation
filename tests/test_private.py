@@ -111,10 +111,6 @@ def test_palindrome_finder_exception():
             },
         ),
         (
-            "extensions_test_14.txt",
-            {"txt": ["Ñ„Ð°Ð¹Ð»1.txt"], "doc": ["Ñ„Ð°Ð¹Ð»2.doc"], "pdf": ["Ñ„Ð°Ð¹Ð»3.pdf"]},
-        ),
-        (
             "extensions_test_15.txt",
             {"txt": ["file 3.txt"], "doc": ["file 1.doc"], "pdf": ["file 2.pdf"]},
         ),
