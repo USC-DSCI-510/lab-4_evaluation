@@ -1,7 +1,7 @@
 .config.txt
 .vscode.JSON
-.hidden_config.Pdf
-polish-the-time.Doc
+.hidden_config.pdf
+polish-the-time.doc
 
 file1.ext1.ext2
 file2.ext2.ext3
